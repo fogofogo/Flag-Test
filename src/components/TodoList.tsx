@@ -12,7 +12,7 @@ const TodoList: React.FC = () => {
 
   useEffect(() => {
     setActiveTodos(todo.filter((t) => t.active));
-  }, []);
+  });
 
   const deleteHandler = (id: string) => dispatch(deleteTodo(id));
 
